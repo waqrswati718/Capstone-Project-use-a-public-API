@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Express EJS Example</title>
+    <link rel="stylesheet" href="/styles.css" />
+    <script src="https://cdn.tailwindcss.com"></script>
+  </head>
+
+  <body class="px-[100px] py-[100px] bg-gray-200">
+    <h1 class="text-center text-5xl bg-pink-300 py-[30px] px-[20px] rounded-md">
+      News of Asia
+    </h1>
+    <div class="grid grid-cols-4 gap-5 mt-3 w-full">
+      <div
+        class="w-fit text-center transition ease-in-out hover:-translate-y-1 hover:scale-110 duration-300 rounded-lg"
+      >
+        <a href="<%= baseUrl %>/pakistan">
+          <img src="/assets/pak.png" class="w-[300px] h-[250px] rounded-t-lg" />
+          <div
+            class="py-3 bg-yellow-300 text-[20px] font-semibold rounded-b-md"
+          >
+            Pakistan
+          </div>
+        </a>
+      </div>
+
+      <div
+        class="w-fit text-center transition ease-in-out hover:-translate-y-1 hover:scale-110 duration-300 rounded-lg"
+      >
+        <a href="<%= baseUrl %>/india">
+          <img
+            src="/assets/india.png"
+            class="w-[300px] h-[250px] rounded-t-lg"
+          />
+          <div
+            class="py-3 bg-yellow-300 text-[20px] font-semibold rounded-b-md"
+          >
+            India
+          </div>
+        </a>
+      </div>
+      <div
+        class="w-fit text-center transition ease-in-out hover:-translate-y-1 hover:scale-110 duration-300 rounded-lg"
+      >
+        <a href="<%= baseUrl %>/china">
+          <img
+            src="/assets/china.png"
+            class="w-[300px] h-[250px] rounded-t-lg"
+          />
+          <div
+            class="py-3 bg-yellow-300 text-[20px] font-semibold rounded-b-md"
+          >
+            China
+          </div>
+        </a>
+      </div>
+      <div
+        class="w-fit text-center transition ease-in-out hover:-translate-y-1 hover:scale-110 duration-300 rounded-lg"
+      >
+        <a href="<%= baseUrl %>/afghanistan">
+          <img
+            src="/assets/afghanistan.png"
+            class="w-[300px] h-[250px] rounded-t-lg"
+          />
+          <div
+            class="py-3 bg-yellow-300 text-[20px] font-semibold rounded-b-md"
+          >
+            Afghanistan
+          </div>
+        </a>
+      </div>
+    </div>
+  </body>
+</html>
